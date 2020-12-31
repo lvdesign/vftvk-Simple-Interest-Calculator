@@ -1,4 +1,32 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color:black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
 
+
+article{
+    background-color: white;
+    width:80%;
+    height:auto;
+    border-radius: 20px;
+    margin:0 auto;
+    text-align: center;
+}
+
+#form-rating{
+     text-align: left;
+     margin: 0 5em;
+}
+label{
+    margin-right:2em;
+    margin-bottom:2em;
+    
+}
+
+h1{ color:gray; }
+
+header, footer{
+padding:2em ;
+text-align: left;
+}
 
