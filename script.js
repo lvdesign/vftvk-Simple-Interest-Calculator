@@ -2,24 +2,27 @@ function compute()
 {
     var d = new Date();
     //amount
-    let p = document.getElementById("principal").value;
+    let p = document.getElementById("amount").value;
     // years
     let y = document.getElementById("years").value;
     // rate
     let r = document.getElementById("rate").value;
-    
-    let deposit = p;
-    let interest = y;
-    let rating = r;
+    //
+    result  = document.getElementById("result");
 
-    let calcul = (p * r) / 100;
+   console.log(r);
+
+    let calcul = p * r ;
     let year = d.getFullYear();
     let annee = year + y;
 
-    console.log( 'deposit :'+ deposit, 'interest :' +interest, 'calcul:' +calcul, 'year:'+ annee, 'rating :' +rating, );
+    console.log( 'deposit :' + p, 'interest :' + r, 'calcul:' + calcul, 'year:'+ annee, );
 
-    return p;
+    result.innerHTML =`if your deposit ${p}, at an interest rate of ${y}.
+    You will receive an amount of ${calcul} in the year ${annee}`;
     
 
 }
         
+function showValue(newValue) { 
+    document.getElementById("rate").innerHTML=newValue +"%"; } 
